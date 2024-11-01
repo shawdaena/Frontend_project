@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Payroll Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="payroll.html" class="active">Payroll</a></li>
+        </ul>
+    </nav>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty List</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .panel {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            padding: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .panel-header:hover {
+            background-color: #f1f1f1;
+        }
+
+        .panel-content {
+            display: none;
+            padding: 15px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .panel-content ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .panel-content li {
+            margin-bottom: 5px;
+        }
+
+        .active .panel-content {
+            display: block;
+        }
+
+        .plus-minus {
+            position: absolute;
+            right: 15px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Engineering <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li><a href="cDept.html">Computer Science & Engineering</a></li>
+                <li>Information Science & Engineering</li>
+                <li>Applied Chemistry & Chemical Engineering</li>
+                <li>Materials Science and Engineering </li>
+                <li>Electrical and Electronic Engineering</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Arts <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li>Philosophy</li>
+                <li>History</li>
+                <li>English</li>
+                <li>Bangla</li>
+                <li>Islamic History & Culture</li>
+                <li>Language</li>
+                <li>Arabic</li>
+                <li>Urdu</li>
+                <li>Persian Language and Literature</li>
+                <li>Islamic Studies</li>
+                <li>Theatre</li>
+                <li>Music</li>
+                <li>Sanskrit</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Repeat similar structure for other faculties -->
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Law <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li>Law</li>
+                <li>Law and Land Admisnistration</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Science <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Statistics</li>
+                <li>Biochemistry & Molecular Biology</li>
+                <li>Pharmacy</li>
+                <li>Population Science & Human Resource Development</li>
+                <li>Applied Mathematics</li>
+                <li>Physical Education and Sports Science</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Fisheries <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li>Fisheries</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Veterinary & Animal Science <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li>Veterinary & Animal Science</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header" onclick="togglePanel(this)">
+            Faculty of Agriculture <span class="plus-minus">+</span>
+        </div>
+        <div class="panel-content">
+            <ul>
+                <li>Agronomy & Agricultural Extension</li>
+                <li>Crop Science & Techonology</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Add more panels as needed -->
+</div>
+
+<script>
+    function togglePanel(panel) {
+        const content = panel.nextElementSibling;
+        const plusMinus = panel.querySelector(".plus-minus");
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            plusMinus.textContent = "+";
+        } else {
+            content.style.display = "block";
+            plusMinus.textContent = "-";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
